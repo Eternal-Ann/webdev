@@ -17,3 +17,81 @@ body {
   border-left: 3px solid black;
   border-right: 3px solid black;
 }
+
+header {
+  overflow: auto;
+}
+h1 {
+  margin: 0;
+  float: left;
+  width: 400px;
+}
+nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: right;
+}
+a {
+  font-size: 1.5em;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+a:visited {
+  color: tomato;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+}
+form {
+  width: 500px;
+  margin: auto;
+  overflow: auto;
+}
+p.warn_tx {
+  text-align: center;
+  text-decoration: underline;
+}
+.item {
+  padding: 5px;
+  text-align: right;
+}
+/*.item {
+  padding: 5px;
+  clear: both;
+  text-align: right;
+  line-height: 25px;
+}*/
+span {
+  float:left;
+}
+input {
+  width: 302px;
+}
+textarea {
+  width: 300px;
+}
+select {
+  width: 302px;
+}
+
+footer {
+  border-top: 3px dashed black;
+  padding-top: 20px;
+  overflow: auto;
+}
+.contact {
+  float: left;
+}
+.contact p {
+  font-size: 1.2em;
+}
+.sitemap {
+  float: right;
+}
+.sitemap h3 {
+  text-align: center;
+}
