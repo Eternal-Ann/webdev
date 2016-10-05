@@ -1,0 +1,22 @@
+{
+  "name": "webdev_projects",
+  "version": "1.0.0",
+  "description": "WebDev learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eternal-Ann/webdev.git"
+  },
+  "author": "eternal-ann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eternal-Ann/webdev/issues"
+  },
+  "homepage": "https://github.com/Eternal-Ann/webdev#readme",
+  "dependencies": {
+    "lodash": "^4.16.3"
+  }
+}
