@@ -20,11 +20,11 @@ function range(fst, lst) {
   var arr = [];
 
   if (step > 0) {
-    for (var i = fst; i < lst + 1; i += step) {
+    for (var i = fst; i <= lst; i += step) {
       arr.push(i);
     }
   } else {
-    for (var i = fst; i > lst - 1; i += step) {
+    for (var i = fst; i >= lst; i += step) {
       arr.push(i);
     }
   }
