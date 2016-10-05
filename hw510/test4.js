@@ -16,21 +16,19 @@ console.log(range(5, 2, -1)); // → [5, 4, 3, 2]
 "use strict";
 
 function range(fst, lst) {
-  var step;
+  var step = (arguments.length > 2) && (arguments[2] != 0) ? step = arguments[2] : step = 1;
   var arr = [];
-  if (arguments.length > 2) step = arguments[2];
-  else step = 1;
+
   if (step > 0) {
     for (var i = fst; i < lst + 1; i += step) {
       arr.push(i);
     }
-    return arr;
-  } else if (step < 0) {
+  } else {
     for (var i = fst; i > lst - 1; i += step) {
       arr.push(i);
     }
-    return arr;
-  } else return "The step is incorrect";
+  }
+  return arr;
 }
 
 function sum(arr) {
@@ -42,6 +40,7 @@ function sum(arr) {
 }
 
 console.log(sum(range(1, 10)));
+console.log(sum(range(1, 10, 0)));
 console.log(range(1, 10, 2));
 console.log(sum(range(1, 10, 2)));
 console.log(range(5, 2, -1));
