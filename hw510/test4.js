@@ -19,7 +19,22 @@ function range(fst, lst) {
   var step = (arguments.length > 2) && (arguments[2] != 0) ? step = arguments[2] : step = 1;
   var arr = [];
 
+  function func() {
+    arr.push(fst);
+    fst += step;
+  }
+
   if (step > 0) {
+    for ( ; fst <= lst; ) {
+      func();
+    }
+  } else {
+    for ( ; fst >= lst; ) {
+      func();
+    }
+  }
+
+/*  if (step > 0) {
     for (var i = fst; i <= lst; i += step) {
       arr.push(i);
     }
@@ -27,7 +42,7 @@ function range(fst, lst) {
     for (var i = fst; i >= lst; i += step) {
       arr.push(i);
     }
-  }
+  }*/
   return arr;
 }
 

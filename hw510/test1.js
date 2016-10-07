@@ -14,6 +14,8 @@ console.log(count(d)); // 1
 "use strict";
 function count(obj) {
   var cnt = 0;
+  //мы не будем перебирать пустые свойства, например d
+  //только те, у которых есть значение
   for (var key in obj) {
     cnt++;
   }
